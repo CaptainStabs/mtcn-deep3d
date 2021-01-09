@@ -3,7 +3,6 @@ import cv2
 import json
 
 img2 = input("Image: ")
-#img2 = 'unnamed.jpg'
 img = cv2.cvtColor(cv2.imread(img2), cv2.COLOR_BGR2RGB)
 detector = MTCNN()
 data = detector.detect_faces(img)
