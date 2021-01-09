@@ -14,5 +14,5 @@ name = img2 + ".txt"
 output = open(name, "a")
 for key in point:
     points = list(point[key])
-    print(str(points[0]) + " " + str(points[1]), f=output)
+    print(str(points[0]) + " " + str(points[1]), file=output)
 output.close()
