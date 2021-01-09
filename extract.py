@@ -4,7 +4,7 @@ img = cv2.cvtColor(cv2.imread(img2), cv2.COLOR_BGR2RGB)
 detector = MTCNN()
 data = detector.detect_faces(img)
 
-bounding_box = set_data()
+bounding_box = data
 point = bounding_box[0]["keypoints"]
 name = img2 + ".txt"
 output = open(name, "a")
