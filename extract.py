@@ -10,7 +10,8 @@ data = detector.detect_faces(img)
 
 bounding_box = data
 point = bounding_box[0]["keypoints"]
-name = img2 + ".txt"
+img3 = img2.split(".")
+name = img3[0] + ".txt"
 output = open(name, "a")
 for key in point:
     points = list(point[key])
